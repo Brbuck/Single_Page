@@ -5,11 +5,11 @@ import { SiMonkeytie } from "react-icons/si"
 import { BsCreditCardFill } from "react-icons/bs"
 
 export const Container = styled.div`
-    height:500px;
+    height: auto;
     width: 100%;
     
     background-color: #161934;
-    padding: 20px 50px;
+    padding: 40px 50px;
     
     
 `;

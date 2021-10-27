@@ -7,6 +7,7 @@ import useTheme from './utils/useTheme'
 import Header from './Components/Header'
 import SectionOne from './Components/SectionOne'
 import SectionTwo from './Components/SectionTwo'
+import Footer from './Components/Footer';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
       <Header togleTheme={togleTheme} />
       <SectionOne />
       <SectionTwo />
+      <Footer />
       <GlobalStyles />
     </ThemeProvider>
   )
