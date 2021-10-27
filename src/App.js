@@ -1,15 +1,15 @@
-import React, {useState} from 'react';
+import React from 'react';
 
 import { ThemeProvider } from 'styled-components'
 import {Dark, Light} from './Styles/Themes'
 import GlobalStyles from './Styles/GlobalStyles'
-
+import useTheme from './utils/useTheme'
 
 
 
 function App() {
 
-  const [theme, setTheme] = useState(Dark)
+  const [theme, setTheme] = useTheme('theme', Dark)
   const togleTheme = () =>{
     setTheme(theme.title === 'dark' ? Light : Dark)
   }
