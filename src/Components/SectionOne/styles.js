@@ -38,6 +38,7 @@ export const Title = styled.h1`
     line-height: 2rem;
 
 `;
+
 export const Button = styled.button`
     width: 180px;
     padding: 12px 15px;
