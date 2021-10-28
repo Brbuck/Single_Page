@@ -5,29 +5,26 @@ export const Container = styled.div`
     height: 500px;
     background: url('https://images.wallpaperscraft.com/image/single/stars_space_galaxy_117958_800x600.jpg') no-repeat center center/cover;
 
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding-left: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    @media screen and (max-width: 811px){
-        grid-template-columns: 1fr;
-        padding: 50px;
-    }
-    
-    @media screen and (max-width: 400px){
-        padding: 30px;
-    }
+    padding: 20px 130px;
+    text-align: center;
+
+    @media screen and (max-width: 810px){
+        padding: 20px 50px;
+        }
+
+    @media screen and (max-width: 810px){
+    padding: 20px ;
+    }   
+
 `;
 
 export const Box = styled.div`
     width: 100%;
     padding:10px;
-
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left;
 
     >h3{
         font-size: 1.3rem;

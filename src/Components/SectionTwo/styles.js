@@ -24,14 +24,8 @@ export const BoxInfo = styled.div`
 
     align-items: flex-start;
     gap: 30px;
-
     margin-top: 80px;
 
-    @media screen and (max-width: 811px){
-        justify-items: left;
-    }
-
-    
 `;
 
 export const Title = styled.h1`

@@ -6,7 +6,6 @@ import { Container, Links } from './styles';
 function Header({ togleTheme }) {
     return (
         <Container>
-            hello world
             <Links>
                 <Link
                     activeClass="active"
