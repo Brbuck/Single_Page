@@ -4,8 +4,8 @@ import { Container, BoxInfo, Title, Medal, Notes, Fingerprint, Calculator } from
 
 function SectionTwo() {
     return (
-        <Container>
-            <Title>Black Advantage</Title>
+        <Container id='section1'>
+            <Title>Market leader</Title>
             <BoxInfo>
                 <Notes>
                     <Medal/>

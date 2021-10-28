@@ -16,4 +16,10 @@ export const Container = styled.div`
     &:hover{
         box-shadow: rgba(0, 0, 0, 0.9) 0px 25px 20px -20px;
     }
+
+`;
+
+export const Links = styled.span`
+    cursor: pointer;
+    font-size: 1rem;
 `;

@@ -5,7 +5,7 @@ import { Container, Box, Title, Button } from './styles';
 
 function SectionOne() {
     return (
-        <Container>
+        <Container >
             <img src={Logo} alt="/"/>
             <Box>
                 <Title>Explore the life you want to live. Put your money to work</Title>

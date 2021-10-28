@@ -10,6 +10,8 @@ export const Container = styled.div`
     justify-content: center;
     align-items: center;
 
+   
+
     background: url('https://www.10wallpaper.com/wallpaper/1366x768/1201/purple_nebula-Space_Photography_Desktop_Wallpaper_1366x768.jpg') no-repeat center center/cover;
 
     /* Overlay */
@@ -27,6 +29,8 @@ export const Container = styled.div`
 export const Box = styled.div`
     width: 400px;    
     position: absolute;
+    text-align: center;
+    
 
 `;
 export const Title = styled.h1`
@@ -36,6 +40,11 @@ export const Title = styled.h1`
     letter-spacing: 1px;
     margin-bottom: 20px;
     line-height: 2rem;
+
+    @media screen and (max-width: 810px){
+            font-size: 1.2rem;
+            padding: 20px;
+        }
 
 `;
 

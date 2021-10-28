@@ -10,7 +10,10 @@ export const Container = styled.div`
     
     background-color: #161934;
     padding: 40px 50px;
-    
+
+    @media screen and (max-width: 400px){
+        padding: 30px;
+    }
     
 `;
 
@@ -18,10 +21,17 @@ export const BoxInfo = styled.div`
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     justify-items: center;
+
     align-items: flex-start;
     gap: 30px;
 
     margin-top: 80px;
+
+    @media screen and (max-width: 811px){
+        justify-items: left;
+    }
+
+    
 `;
 
 export const Title = styled.h1`
