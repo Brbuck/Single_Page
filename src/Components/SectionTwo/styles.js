@@ -8,7 +8,7 @@ export const Container = styled.div`
     height: auto;
     width: 100%;
     
-    background-color: #161934;
+    background-color: ${props => props.theme.colors.primary};
     padding: 40px 50px;
 
     @media screen and (max-width: 400px){

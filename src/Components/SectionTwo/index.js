@@ -15,11 +15,11 @@ function SectionTwo() {
                 <Notes>
                     <Calculator/>
                     <h2>How to start investing</h2>
-                    <p>Investing in one of the largest financial institutions in the country is very simple. In just a few steps, you'll be ready to go.</p>
+                    <p>Investing in one of the largest financial institutions in the country is very simple. In just a few steps.</p>
                 </Notes>
                 <Notes>
                     <Fingerprint/>
-                    <h2>Analysis and recommendations</h2>
+                    <h2>Analysis </h2>
                     <p>More than your manager, our advisors will help you choose the best investment options for your profile.</p>
                 </Notes>
             </BoxInfo>
