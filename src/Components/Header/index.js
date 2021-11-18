@@ -12,7 +12,18 @@ function Header({ togleTheme }) {
                     to="section1"
                     spy={true}
                     smooth={true}
-                    offset={-70}
+                    offset={-600}
+                    duration={500}
+                >Home
+                </Link>
+            </Links>
+            <Links>
+                <Link
+                    activeClass="active"
+                    to="section1"
+                    spy={true}
+                    smooth={true}
+                    offset={-320}
                     duration={500}
                 >Section1
                 </Link>
@@ -23,7 +34,7 @@ function Header({ togleTheme }) {
                     to="section2"
                     spy={true}
                     smooth={true}
-                    offset={-70}
+                    offset={-200}
                     duration={500}
                 >Section2
                 </Link>
