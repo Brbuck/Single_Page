@@ -10,6 +10,8 @@ function Painel() {
             setClick2(!click2)
         } else if (click3 === true) {
             setClick3(!click3)
+        }else {
+            setClick1(true)
         }
     }
 
@@ -20,6 +22,8 @@ function Painel() {
             setClick1(!click1)
         } else if (click3 === true) {
             setClick3(!click3)
+        }else {
+            setClick2(true)
         }
     }
 
@@ -31,6 +35,8 @@ function Painel() {
         }
         else if (click2 === true) {
             setClick2(!click2)
+        }else {
+            setClick3(true)
         }
     }
 
