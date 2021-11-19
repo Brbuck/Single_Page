@@ -16,6 +16,10 @@ export const Content = styled.div`
 
     border: 1px solid #555;
     background-color: #5c3d76;
+
+    @media screen and (max-width:560px){
+        height: 440px;
+    }
     
 `;
 
@@ -41,6 +45,10 @@ export const Link = styled.button`
 
     background-color: #2f2e5a;
     border-bottom: 1px solid #555;
+
+    @media screen and (max-width:560px){
+        font-size: 1rem;
+    }
 
     :nth-child(1) {
         border-right: 1px solid #555;
@@ -70,6 +78,10 @@ export const Info1 = styled.div`
     justify-content: center;
     align-items: center;
 
+    @media screen and (max-width:560px){
+        height: 400px;
+    }
+
     div{
         width: 100%;
         max-width: 700px;
@@ -78,11 +90,20 @@ export const Info1 = styled.div`
         h1{
             font-size: 1.7rem;
             margin-bottom: 10px;
+
+            @media screen and (max-width:560px){
+                font-size: 1.3rem;
+            }
             
         }
 
         p{
             line-height: 25px;
+            font-size: 1.1rem;
+
+            @media screen and (max-width:560px){
+                font-size: 0.9rem;
+            }
         }
     }
 
@@ -103,6 +124,10 @@ export const iconCSS = css`
     height: 350px;
     padding: 8px;
     color: #fff;
+
+    @media screen and (max-width:766px){
+        display: none;
+    }
 
 `;
 
