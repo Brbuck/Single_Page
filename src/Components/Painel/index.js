@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import { Container, Content, Menu, Link, Info1, Info2, Info3 } from './styles';
+import { Container, Content, Menu, Link, Info1, Info2, Info3, PlatformIcon } from './styles';
 
 function Painel() {
     const [click1, setClick1] = useState(true)
@@ -10,7 +10,7 @@ function Painel() {
             setClick2(!click2)
         } else if (click3 === true) {
             setClick3(!click3)
-        }else {
+        } else {
             setClick1(true)
         }
     }
@@ -22,7 +22,7 @@ function Painel() {
             setClick1(!click1)
         } else if (click3 === true) {
             setClick3(!click3)
-        }else {
+        } else {
             setClick2(true)
         }
     }
@@ -35,7 +35,7 @@ function Painel() {
         }
         else if (click2 === true) {
             setClick2(!click2)
-        }else {
+        } else {
             setClick3(true)
         }
     }
@@ -44,8 +44,8 @@ function Painel() {
         <Container>
             <Content>
                 <Menu>
-                    <Link onClick={handleClick1}>1</Link>
-                    <Link onClick={handleClick2}>2</Link>
+                    <Link onClick={handleClick1}>Stock market</Link>
+                    <Link onClick={handleClick2}>Futures & Options</Link>
                     <Link onClick={handleClick3}>3</Link>
                 </Menu>
                 {click1 ? <Info1>
@@ -56,9 +56,13 @@ function Painel() {
                     </div>
                 </Info1> : null}
                 {click2 ? <Info2>
+                    <PlatformIcon />
                     <div>
-                        <h1>Hello world 2</h1>
-                        <p>Teste2</p>
+                        <h1>Electronic trading solutions available on B.B. Bank </h1>
+                        <p>B.B. Bank’s F&O Electronic Client Solutions provides execution consultancy,
+                            risk management and trading support for clients trading on B.B. Bank’s electronic offerings.
+                            Our breadth of market coverage, consistency of product performance and our ability to customize algo
+                            speciﬁcs across markets and products will help you manage costs and efficiently access liquidity. </p>
                         <p>Teste2</p>
                     </div>
                 </Info2> : null}
@@ -68,7 +72,7 @@ function Painel() {
                         <p>Teste3</p>
                         <p>Teste3</p>
                     </div>
-                </Info3> : null} 
+                </Info3> : null}
 
             </Content>
         </Container>
