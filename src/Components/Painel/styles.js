@@ -1,5 +1,7 @@
-import styled, {css} from 'styled-components';
+import styled, { css } from 'styled-components';
 import { MdComputer } from "react-icons/md";
+import { FaBitcoin } from "react-icons/fa";
+import { AiFillGolden } from "react-icons/ai";
 
 export const Container = styled.div`
     background-color: ${props => props.theme.colors.primary};
@@ -105,3 +107,5 @@ export const iconCSS = css`
 `;
 
 export const PlatformIcon = styled(MdComputer)`${iconCSS}`
+export const BitcoinIcon = styled(FaBitcoin)`${iconCSS}`
+export const CommoditiesIcon = styled(AiFillGolden)`${iconCSS}`
