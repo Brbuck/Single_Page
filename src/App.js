@@ -8,7 +8,7 @@ import Header from './Components/Header'
 import SectionOne from './Components/SectionOne'
 import SectionTwo from './Components/SectionTwo'
 import Painel from './Components/Painel';
-import Footer from './Components/Footer';
+import SectionThree from './Components/SectionThree';
 
 
 function App() {
@@ -24,7 +24,7 @@ function App() {
       <SectionOne />
       <SectionTwo />
       <Painel />
-      <Footer />
+      <SectionThree/>
       <GlobalStyles />
     </ThemeProvider>
   )

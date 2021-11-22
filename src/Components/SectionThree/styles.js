@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
     width: 100%;
-    height: 500px;
+    height: 100vh;
     background: url('https://images.wallpaperscraft.com/image/single/stars_space_galaxy_117958_800x600.jpg') no-repeat center center/cover;
 
     display: flex;

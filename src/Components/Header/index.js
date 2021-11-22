@@ -1,9 +1,12 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import { Link } from "react-scroll";
+import {ThemeContext} from 'styled-components'
+import Switch from "react-switch";
 
 import { Container, Links } from './styles';
 
 function Header({ togleTheme }) {
+    const {title} = useContext(ThemeContext)
     return (
         <Container>
             <Links>
@@ -34,12 +37,33 @@ function Header({ togleTheme }) {
                     to="section2"
                     spy={true}
                     smooth={true}
-                    offset={-200}
+                    offset={-800}
                     duration={500}
                 >Section2
-                </Link>
+                </Link>     
             </Links>
-            <input type="checkbox" onChange={togleTheme} />
+            <Links>
+                <Link
+                    activeClass="active"
+                    to="section2"
+                    spy={true}
+                    smooth={true}
+                    offset={0}
+                    duration={500}
+                >Section3
+                </Link>
+                
+            </Links>
+            <Switch
+                onChange={togleTheme} checked={title === 'dark'}
+                height={15}
+                width={42}
+                handleDiameter={18}
+                onColor='#08b9ff'
+                offColor='#ccc'
+                offHandleColor='#08b9ff'
+
+            />
         </Container>
     );
 }

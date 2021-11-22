@@ -5,7 +5,12 @@ import { AiFillGolden } from "react-icons/ai";
 
 export const Container = styled.div`
     background-color: ${props => props.theme.colors.primary};
-    padding: 20px ;
+    padding: 60px 20px ;
+    height: 100vh;
+
+    @media screen and (max-width:560px){
+        height: auto;
+    }
 `;
 
 export const Content = styled.div`
