@@ -3,24 +3,24 @@ import { Link } from "react-scroll";
 import {ThemeContext} from 'styled-components'
 import Switch from "react-switch";
 
-import { Container, Links } from './styles';
+import { Container, NavLinks } from './styles';
 
 function Header({ togleTheme }) {
     const {title} = useContext(ThemeContext)
     return (
         <Container>
-            <Links>
+            <NavLinks>
                 <Link
                     activeClass="active"
                     to="section1"
                     spy={true}
                     smooth={true}
-                    offset={-600}
+                    offset={-900}
                     duration={500}
                 >Home
                 </Link>
-            </Links>
-            <Links>
+            </NavLinks>
+            <NavLinks>
                 <Link
                     activeClass="active"
                     to="section1"
@@ -30,8 +30,8 @@ function Header({ togleTheme }) {
                     duration={500}
                 >Section1
                 </Link>
-            </Links>
-            <Links>
+            </NavLinks>
+            <NavLinks>
                 <Link
                     activeClass="active"
                     to="section2"
@@ -41,8 +41,8 @@ function Header({ togleTheme }) {
                     duration={500}
                 >Section2
                 </Link>     
-            </Links>
-            <Links>
+            </NavLinks>
+            <NavLinks>
                 <Link
                     activeClass="active"
                     to="section2"
@@ -53,7 +53,7 @@ function Header({ togleTheme }) {
                 >Section3
                 </Link>
                 
-            </Links>
+            </NavLinks>
             <Switch
                 onChange={togleTheme} checked={title === 'dark'}
                 height={15}

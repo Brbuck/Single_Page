@@ -22,7 +22,7 @@ export const Container = styled.div`
 
 `;
 
-export const Links = styled.span`
+export const NavLinks = styled.span`
     cursor: pointer;
     font-size: 1rem;
 `;
